@@ -1,53 +1,37 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
 
 
-import math
+def dissipated_power(voltage, resistance):
+	# TODO: Calculer la puissance dissipée par la résistance.
+	return 0
 
+def orthogonal(v1, v2):
+	# TODO: Retourner vrai si les vecteurs sont orthogonaux, faux sinon.
+	v1[0] # Pour accéder au X
+	v1[1] # Pour accéder au Y
+	pass
 
-def square_root(a: float) -> float:
-    return 0.0
+def average(values):
+	# TODO: Calculer la moyenne des valeurs positives (on ignore les valeurs strictement négatives).
+	for v in values:
+		pass # La variable v contient une valeur de la liste.
 
+def bills(value):
+	# TODO: Calculez le nombre de billets de 20$, 10$ et 5$ et pièces de 1$ à remettre pour représenter la valeur.
+	while value != 0:
+		if value >= 20:
+			pass
+		elif value >= 10:
+			pass
+		elif value >= 5:
+			pass
+		elif value >= 1:
+			pass
 
-def square(a: float) -> float:
-    return 0.0
+	return (twenties, tens, fives, twos, ones);
 
-
-def average(a: float, b: float, c: float) -> float:
-    return 0.0
-
-
-def to_radians(angle_degs: float, angle_mins: float, angle_secs: float) -> float:
-    return 0.0
-
-
-def to_degrees(angle_rads: float) -> tuple:
-    return 0.0, 0.0, 0.0
-
-
-def to_celsius(temperature: float) -> float:
-    return 0.0
-
-
-def to_farenheit(temperature: float) -> float:
-    return 0.0
-
-
-def main() -> None:
-    print(f"La racine carré de 144 est : {square_root(144)}")
-
-    print(f"Le carré de 12 est : {square(12)}")
-
-    print(f"Moyenne des nombres 2, 4, 6: {average(2, 4, 6)}")
-
-    print(f"Conversion de 100 degres, 2 minutes et 45 secondes en radians: {to_radians(180, 2, 45)}")
-
-    degrees, minutes, seconds = to_degrees(1.0)
-    print(f"Conversion de 1 radian en degres: {degrees} degres, {minutes} minutes et {seconds} secondes")
-
-    print(f"Conversion de 100 Celsius en Farenheit: {to_farenheit(100.0)}")
-    print(f"Conversion de 451 Farenheit en Celsius: {to_celsius(451.0)}")
-
-
-if __name__ == '__main__':
-    main()
+if __name__ == "__main__":
+	print(dissipated_power(69, 420))
+	print(orthogonal((1, 1), (-1, 1)))
+	print(average([1, 4, -2, 10]))
+	print(bills(137))
